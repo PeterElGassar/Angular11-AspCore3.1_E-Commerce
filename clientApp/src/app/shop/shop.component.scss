@@ -1,15 +1,31 @@
-@import "src/assets/scss/_variable.scss";
+// @import "src/assets/scss/_variable.scss";
+
+// .filter-header{
+//     color: $main-color;
+// }
+
+// .active-theme{
+//     background-color: $second-color;
+//     color: #fff;
+// }
+// .products-wrapper{
+//     min-height: 700px !important;
+//     height: auto;
+// }
 
 
-.filter-header{
-    color: $main-color;
+  .breadcrumb-area {
+    padding: 0px !important;
+  }
+.main-wrapper{
+    padding: 0px !important;
+
 }
 
-.active-theme{
-    background-color: $second-color;
-    color: #fff;
-}
-.products-wrapper{
-    min-height: 700px !important;
-    height: auto;
+.resize-li{
+  // cursor: pointer;  
+  padding:5px 1px;
+  &>a{
+    cursor: pointer;
+  }
 }

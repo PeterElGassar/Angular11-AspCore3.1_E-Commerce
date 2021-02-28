@@ -1,0 +1,31 @@
+.pagination-area ul {
+  text-align: right;
+
+  &>li {
+    display: inline-block;
+
+    &>a {
+      color: #111;
+      padding: 10px;
+    }
+    &>li:hover a{
+        color: #fedc19;
+    }
+  }
+
+}
+
+.pagination {
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+

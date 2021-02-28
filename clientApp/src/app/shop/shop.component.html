@@ -4,7 +4,7 @@
     </li>
 </ul> -->
 
-<div class="row mt-4">
+<!-- <div class="row mt-4">
 
   <div class="col-3">
     <h5 class=" my-2 filter-header">Sort</h5>
@@ -32,18 +32,13 @@
 
     </div>
   </div>
-  <!-- Products Section -->
   <div class="col-9 ">
-    <!-- search section -->
     <div class="row align-items-center mb-3">
-    <!-- =================== -->
-    <div class="col-3">
-      <paging-header
-      [pageNumber]="this.shopParams.pageNumber"
-      [pageSize]="this.shopParams.pageSize"
-      [totalCount]="this.totalCount">
-      </paging-header>
-    </div>
+      <div class="col-3">
+        <paging-header [pageNumber]="this.shopParams.pageNumber" [pageSize]="this.shopParams.pageSize"
+          [totalCount]="this.totalCount">
+        </paging-header>
+      </div>
 
       <div class="col-9">
         <div class="input-group ">
@@ -58,23 +53,232 @@
       </div>
     </div>
 
-<!-- products section -->
     <div class="row products-wrapper">
       <div class="col-12 col-md-4 col-lg-3 mb-3" *ngFor="let item of products">
         <product-item [product]='item'></product-item>
       </div>
     </div>
 
-    <!-- Pagination section -->
     <div class="d-flex justify-content-center my-5" *ngIf="totalCount > 0">
-      <app-pager
-      [pageSize]="this.shopParams.pageSize"
-      [totalCount]="this.totalCount"
-      (pageChanged)="onPageChange($event)">
+      <app-pager [pageSize]="this.shopParams.pageSize" [totalCount]="this.totalCount"
+        (pageChanged)="onPageChange($event)">
 
       </app-pager>
-      <!-- =========== -->
     </div>
   </div>
-  <!-- End Of Products Section -->
-</div>
+</div> -->
+
+
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area mb-30">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-12">
+                  <div class="breadcrumb-wrap">
+                      <nav aria-label="breadcrumb">
+                          <ul class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Shop grid left 4 column</li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- breadcrumb area end -->
+
+
+
+     <!-- shop page main wrapper start -->
+     <div class="main-wrapper pt-35">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-3">
+                   <div class="shop-sidebar-inner mb-30">
+                       <!-- filter-price-content start -->
+                       <div class="single-sidebar mb-45">
+                           <div class="sidebar-inner-title mb-25">
+                               <h3>Fillter by price</h3>
+                           </div>
+                            <div class="sidebar-content-box"> 
+                                <div class="filter-price-content">
+                                    <form action="#" method="post">
+                                        <div id="price-slider" class="price-slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 16.6667%; width: 79.1667%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 16.6667%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 95.8333%;"></span></div>
+                                        <div class="filter-price-wapper">
+                                            <div class="filter-price-cont">
+                                                <div class="input-type">
+                                                    <input id="min-price" readonly="" type="text">
+                                                </div>
+                                                <div class="input-type">
+                                                    <input id="max-price" readonly="" type="text">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>  
+                                </div> 
+                            </div>
+                       </div>
+                        <!-- filte price end -->
+
+                        <!-- Brand Filter -->
+                        <div class="single-sidebar mb-45">
+                            <div class="sidebar-inner-title mb-25">
+                                <h3>Brands</h3>
+                            </div>
+                            <div class="sidebar-content-box">
+                                <div class="filter-attribute-container">
+                                    <ul>
+                                        <li class="resize-li" *ngFor="let type of types"
+                                            [value]='type.id'>
+
+                                            <a (click)='onBrandSeleted(type.id)'
+                                             [class.active]="type.id === this.shopParams.typeId">
+                                             {{type.name}}</a>
+
+                                        </li>
+                                       
+                                       
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End-Brand Filter -->
+
+                        <!-- Types Filter -->
+                        <div class="single-sidebar mb-45">
+                            <div class="sidebar-inner-title mb-25">
+                                <h3>Types</h3>
+                            </div>
+                            <div class="sidebar-content-box">
+                                <div class="filter-attribute-container">
+                                    <ul>
+                                        <li class="resize-li" *ngFor="let brand of brands"
+                                            [value]='brand.id'>
+
+                                            <a (click)='onBrandSeleted(brand.id)'
+                                             [class.active]="brand.id === this.shopParams.brandId">
+                                             {{brand.name}}</a>
+
+                                        </li>
+                                       
+                                       
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End-Types Filter -->
+
+
+                   </div>
+                    <!-- sidebar promote picture start -->
+                    <div class="single-sidebar mb-30">
+                        <div class="sidebar-thumb">
+                            <a href="#"><img src="assets/img/banner/img-static-sidebar.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <!-- sidebar promote picture end -->
+              </div>
+              <div class="col-lg-9 order-first order-lg-last">
+                   <div class="product-shop-main-wrapper mb-50">
+                       <div class="shop-baner-img mb-70">
+                           <a href="#"><img src="assets/img/banner/category-image.jpg" alt=""></a>
+                       </div>
+                       <div class="shop-top-bar mb-30">
+                           <div class="row">
+                               <div class="col-md-6">
+                                   <div class="top-bar-left">
+                                       <div class="product-view-mode">
+                                           <a href="#" data-target="column_3"><span>3-col</span></a>
+                                           <a class="active" href="#" data-target="grid"><span>4-col</span></a>
+                                           <a href="#" data-target="list"><span>list</span></a>
+                                       </div>
+                                       <div class="product-page">
+                                           <p>Showing 1 to 9 of 9 (1 Pages)</p>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="col-md-6">
+                                   <div class="top-bar-right">
+                                       <div class="per-page">
+                                           <p>Show : </p>
+                                           <select class="nice-select" name="sortby">
+                                               <option value="trending">10</option>
+                                               <option value="sales">20</option>
+                                               <option value="sales">30</option>
+                                               <option value="rating">40</option>
+                                               <option value="date">50</option>
+                                               <option value="price-asc">60</option>
+                                               <option value="price-asc">70</option>
+                                               <option value="price-asc">100</option>
+                                           </select>
+                                       </div>
+                                       <div class="product-short">
+                                           <p>Sort By : </p>
+                                           <select class="nice-select" name="sortby">
+                                               <option value="trending">Relevance</option>
+                                               <option value="sales">Name (A - Z)</option>
+                                               <option value="sales">Name (Z - A)</option>
+                                               <option value="rating">Price (Low &gt; High)</option>
+                                               <option value="date">Rating (Lowest)</option>
+                                               <option value="price-asc">Model (A - Z)</option>
+                                               <option value="price-asc">Model (Z - A)</option>
+                                           </select>
+                                       </div> 
+                                   </div>
+                               </div>
+                           </div>
+                           
+                       </div>
+                       <div class="shop-product-wrap grid row">
+                           <div class=" col-md-4 col-sm-6" *ngFor="let item of products">
+                              <product-item [product]="item"></product-item>
+                                <!-- end single grid item -->
+                              
+                           </div>
+                          
+                       </div>
+                       <div class="paginatoin-area style-2 pt-35 pb-20">
+                           <div class="row">
+                               <div class="col-sm-6">
+                                   <div class="pagination-area">
+                                       <!-- <p>Showing 1 to 9 of 9 (1 Pages)</p> -->
+                                       <paging-header
+                                        [pageNumber]="this.shopParams.pageNumber"
+                                        [pageSize]="this.shopParams.pageSize"
+                                       [totalCount]="this.totalCount">
+                                     </paging-header>
+                                   
+
+                                   </div>
+                               </div>
+                               <div class="col-sm-6">
+                                 <!-- <ul class="pagination-box pagination-style-2">
+                                       <li><a class="Previous" href="#">Previous</a>
+                                       </li>
+                                       <li class="active"><a href="#">1</a></li>
+                                       <li><a href="#">2</a></li>
+                                       <li><a href="#">3</a></li>
+                                       <li>
+                                         <a class="Next" href="#"> Next </a>
+                                       </li>
+                                   </ul> -->
+
+
+                                 <app-pager [pageSize]='this.shopParams.pageSize'
+                                  [totalCount]='this.totalCount'
+                                   (pageChanged)='onPageChange($event)'>
+
+                                 </app-pager>
+
+                               </div>
+                           </div>
+                       </div> 
+                   </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- shop page main wrapper end -->

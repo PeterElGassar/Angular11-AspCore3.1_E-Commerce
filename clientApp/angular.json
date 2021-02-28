@@ -30,10 +30,30 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/slick-carousel/slick/slick.scss",
+              "./node_modules/slick-carousel/slick/slick-theme.scss",
               "src/assets/scss/_variable.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+
+
+              "src/assets/css/linear-icon.css",
+              "src/assets/css/plugins.css",
+              "src/assets/css/default.scss",
+              "src/assets/css/style.scss",
+              "src/assets/css/responsive.css",
+              "src/assets/css/font-awesome.min.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "./src/assets/js/vendor/modernizr-3.5.0.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/slick-carousel/slick/slick.min.js",
+              "./src/assets/js/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./src/assets/js/plugins.js",
+              "./src/assets/js/ajax-mail.js",
+              "./src/assets/js/main.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,10 +121,11 @@
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "/node_modules/font-awesome/css/font-awesome.min.css",
               "/src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+           
+            ]
           }
         },
         "lint": {

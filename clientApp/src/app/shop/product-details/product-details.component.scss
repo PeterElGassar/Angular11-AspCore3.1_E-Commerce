@@ -1,0 +1,21 @@
+
+.slick-prev{
+    left: 5px !important;
+    right: auto !important;
+    &:before{
+        position: relative;
+        top: 20%;
+        color: #fedc19;
+    }
+}
+
+.slick-next{
+    left: auto !important;
+    right: 5px !important;
+    &:before{
+        position: relative;
+        top: 20%;
+        color: #fedc19;
+    }
+}
+

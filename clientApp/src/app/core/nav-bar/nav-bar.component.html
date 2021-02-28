@@ -1,4 +1,4 @@
-<div class=" navbar-custom d-flex flex-column
+<!-- <div class=" navbar-custom d-flex flex-column
   justify-content-between flex-md-row align-items-center
   p-3 py-md-1 px-md-4 mb-3 bg-white  
   fixed-top wr">
@@ -12,7 +12,7 @@
   </nav>
 
   <div class="d-flex justify-content-center login-section">
-    <a href="#" class="mr-3 px-2 py-3 position-relative">
+    <a routerLink="/shop" class="mr-3 px-2 py-3 position-relative">
       <span class="cart-no badge text-white bg-danger position-absolute">5</span>
       <i class="fa fa-shopping-cart fa-2x text-white"></i>
     </a>
@@ -20,4 +20,339 @@
     <a class="btn btn-outline-secondary mr-2 sign-btn">Sign up</a>
   </div>
 
-</div>
+</div> -->
+
+    <!-- header area start -->
+  <!-- header area start -->
+  <header class="header-pos">
+    <div class="header-top hstyle3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="header-top-left">
+                        <ul>
+                            <li><span>Email: </span>support@sinrato.com</li>
+                            <li>Free Shipping for all Order of $99</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="box box-right">
+                        <ul>
+                            <li class="settings">
+                                <a class="ha-toggle" routerLink="/shop">My Account</a>
+                                <ul class="box-dropdown ha-dropdown">
+                                    <li><a href="login.html">Register</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </li>
+                            <li class="settings">
+                                <a class="ha-toggle" routerLink="/shop">Language</a>
+                                <ul class="box-dropdown ha-dropdown">
+                                    <li><a href="login.html"><img src="assets/img/icon/en.png" alt=""> English</a></li>
+                                    <li><a href="login.html"><img src="assets/img/icon/ge.png" alt=""> Germany</a></li>
+                                </ul>
+                            </li>
+                            <li class="currency">
+                                <a class="ha-toggle" routerLink="/shop">Currency</a>
+                                <ul class="box-dropdown ha-dropdown">
+                                    <li><a href="login.html">€ Euro</a></li>
+                                    <li><a href="login.html">$ US Doller</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-middle">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-12">
+                    <div class="logo">
+                        <a routerLink='/'><img src="assets/img/logo/logo-sinrato.png" alt="brand-logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 order-sm-last">
+                    <div class="header-middle-inner hstyle3-spacing">
+                        <form class="d-flex " action="https://demo.hasthemes.com/sinrato-preview/sinrato/method">
+                            <div class="top-cat hm1">
+                                <div class="search-form">
+                                     <select>
+                                        <optgroup label="Electronics">
+                                            <option value="volvo">Laptop</option>
+                                            <option value="saab">watch</option>
+                                            <option value="saab">air cooler</option>
+                                            <option value="saab">audio</option>
+                                            <option value="saab">speakers</option>
+                                            <option value="saab">amplifires</option>
+                                        </optgroup>
+                                        <optgroup label="Fashion">
+                                            <option value="mercedes">Womens tops</option>
+                                            <option value="audi">Jeans</option>
+                                            <option value="audi">Shirt</option>
+                                            <option value="audi">Pant</option>
+                                            <option value="audi">Watch</option>
+                                            <option value="audi">Handbag</option>
+                                        </optgroup>
+                                    </select> 
+                                </div>
+                            </div>
+                            <input type="text" class="top-cat-field" placeholder="Search entire store here">
+                            <input type="button" class="top-search-btn" value="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8 col-12 col-sm-8 order-lg-last">
+                    <div class="mini-cart-option">
+                        <ul>
+                            <li class="compare">
+                                <a class="ha-toggle" href="compare.html"><span class="lnr lnr-sync"></span>Product compare</a>
+                            </li>
+                            <li class="wishlist">
+                                <a class="ha-toggle" href="wishlist.html"><span class="lnr lnr-heart"></span><span class="count">1</span>wishlist</a>
+                            </li>
+                            <li class="my-cart">
+                                <a class="ha-toggle" routerLink="/shop"><span class="lnr lnr-cart"></span><span class="count">2</span>my cart</a>
+                                <ul class="mini-cart-drop-down ha-dropdown">
+                                    <li class="mb-30">
+                                        <div class="cart-img">
+                                            <a href="product-details.html"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
+                                        </div>
+                                        <div class="cart-info">
+                                            <h4><a href="product-details.html">Koss Porta Pro On Ear  Headphones </a></h4>
+                                            <span> <span>1 x </span>£165.00</span>
+                                        </div>
+                                        <div class="del-icon">
+                                            <i class="fa fa-times-circle"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="subtotal-text">Sub-total: </div>
+                                        <div class="subtotal-price">£48.94</div>
+                                    </li>
+                                    <li>
+                                        <div class="subtotal-text">Eco Tax (-2.00): </div>
+                                        <div class="subtotal-price">£1.51</div>
+                                    </li>
+                                    <li>
+                                        <div class="subtotal-text">Vat (20%): </div>
+                                        <div class="subtotal-price">£9.79</div>
+                                    </li>
+                                    <li>
+                                        <div class="subtotal-text">Total: </div>
+                                        <div class="subtotal-price"><span>£60.24</span></div>
+                                    </li>
+                                    <li class="mt-30">
+                                        <a class="cart-button" href="cart.html">view cart</a>
+                                    </li>
+                                    <li>
+                                        <a class="cart-button" href="checkout.html">checkout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top-menu theme-bg sticker">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top-main-menu">
+                        <div class="main-menu menu-style3">
+                            <nav id="mobile-menu" data-screen="1199" class="m-style3">
+                                <ul>
+                                    <li><a routerLink="/shop"><img src="assets/img/icon/icon1.png" alt=""><span>Audio & Home Theater<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a routerLink="/shop">Shop Grid Layout <i class="lnr lnr-chevron-right"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="shop-grid-left-sidebar.html">Shop grid left sidebar</a></li>
+                                                    <li><a href="shop-grid-right-sidebar.html">Shop grid right sightbar</a></li>
+                                                    <li><a href="shop-grid-full-width.html">Shop grid full width</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a routerLink="/shop">Shop List Layout <i class="lnr lnr-chevron-right"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="shop-list-left-sidebar.html">Shop lidt left sidebar</a></li>
+                                                    <li><a href="shop-list-right-sidebar.html">Shop list right sidebar</a></li>
+                                                    <li><a href="shop-list-full-width.html">Shop list full width</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a routerLink="/shop">Product Details <i class="lnr lnr-chevron-right"></i></a>
+                                                <ul class="dropdown">
+                                                    <li><a href="product-details.html">Product Details</a></li>
+                                                    <li><a href="product-details-variable.html">Product Details Variable</a></li>
+                                                    <li><a href="product-details-external.html">Product Details External</a></li>
+                                                    <li><a href="product-details-group.html">Product Details Group</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a routerLink="/shop"><img src="assets/img/icon/icon2.png" alt=""><span>Camera & Video<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="shop-grid-left-sidebar.html">DJ/Professional</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">On-Ear</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Over-Ear</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Accessories</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Sports & Fitness</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="static"><a routerLink="/shop"><img src="assets/img/icon/icon3.png" alt=""><span>Laptop & Computer<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="mega-menu mega-full">
+                                            <li class="mega-title"><a routerLink="/shop">Security Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Mirrorless Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Shoot Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Mirrorless Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Mirrorless Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Shoot Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Digital SLRs</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Body & Lens</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Body Only</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Lenses</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Sports & Action Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Activeon</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Bracketron </a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Discovery Kids</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">GoPro</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Celestron</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Point-and-Shoots</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Celestron</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Bower</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Flipbac</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">GigaPan</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">SanDisk</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a routerLink="/shop"><img src="assets/img/icon/icon4.png" alt=""><span>Cellphones & Accessories<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="shop-grid-left-sidebar.html">Cell Phones with Service</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Accessories</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">No-Contract</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Prepaid Cell Phones</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Unlocked Cell Phones</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="static"><a routerLink="/shop"><img src="assets/img/icon/icon5.png" alt=""><span>Video Games Consoles<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="mega-menu mega-full">
+                                            <li class="mega-title"><a routerLink="/shop">Security Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Mirrorless Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Shoot Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Mirrorless Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Mirrorless Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Shoot Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Digital SLRs</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Body & Lens</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Body Only</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Lenses</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">point</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Cameras</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">DSLR Lenses</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Digital Cameras</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Sports & Action Cameras</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Activeon</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Bracketron </a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Discovery Kids</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">GoPro</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Celestron</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="mega-title"><a routerLink="/shop">Point-and-Shoots</a>
+                                                <ul>
+                                                    <li><a href="shop-grid-left-sidebar.html">Celestron</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Bower</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">Flipbac</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">GigaPan</a></li>
+                                                    <li><a href="shop-grid-left-sidebar.html">SanDisk</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a routerLink="/shop"><img src="assets/img/icon/icon6.png" alt=""><span>Business & Office<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="shop-grid-left-sidebar.html">Calculators</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Ink & Toner</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Printers</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Scanners</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">PlayStation</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a routerLink="/shop"><img src="assets/img/icon/icon7.png" alt=""><span>Headphones & Accessoriess<i class="lnr lnr-chevron-down"></i></span></a>
+                                        <ul class="dropdown">
+                                            <li><a href="shop-grid-left-sidebar.html">DJ/Professional</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">On-Ear</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Over-Ear</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Accessories</a></li>
+                                            <li><a href="shop-grid-left-sidebar.html">Sports & Fitness</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div> <!-- </div> end main menu -->
+                    </div>
+                </div>
+                <div class="col-12 d-block d-xl-none"><div class="mobile-menu m-style3"></div></div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- header area end -->
+  <!-- header area end -->
