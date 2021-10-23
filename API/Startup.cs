@@ -8,7 +8,7 @@ using AutoMapper;
 using API.Helpers;
 using API.Middleware;
 using API.Extensions;
-
+using StackExchange.Redis;
 namespace API
 {
     public class Startup
@@ -31,6 +31,12 @@ namespace API
             services.AddDbContext<StoreContext>(options =>
             options.UseSqlServer(_config.GetConnectionString("DefaultConnection")));
 
+            services.AddSingleton<IConnectionMultiplexer>(c =>{
+            var configuration = ConfigurationOptions
+            .Parse(_config.GetConnectionString("Redis"),true);
+
+            return ConnectionMultiplexer.Connect(configuration);
+            });
             services.AddApplicationServices();
             services.AddSwaggerDocmention();
             services.AddCors(opt =>
@@ -38,7 +44,7 @@ namespace API
 
                 opt.AddPolicy("CorsPolicy", policy =>
                {
-                   policy.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
+                   policy.AllowAnyHeader().AllowAnyMethod().AllowAnyHeader().WithOrigins("https://localhost:4200");
 
                });
             });

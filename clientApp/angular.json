@@ -41,7 +41,13 @@
               "src/assets/css/default.scss",
               "src/assets/css/style.scss",
               "src/assets/css/responsive.css",
-              "src/assets/css/font-awesome.min.css"
+              "src/assets/css/font-awesome.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
+
+
+
 
             ],
             "scripts": [
